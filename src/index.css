@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Backgrounds — deep dark with purple undertone */
+  --bg: #0f0a1e;
+  --bg-secondary: #130d24;
+  --bg-card: #1a1130;
+
+  /* Borders */
+  --border: rgba(128, 84, 179, 0.25);
+
+  /* Typography */
+  --text: #b0a0cc;
+  --text-h: #f0eafa;
+
+  /* Primary accent — vibrant purple */
+  --accent: #8054b3;
+  --accent-light: #a87de0;
+  --accent-glow: rgba(128, 84, 179, 0.18);
+
+  /* Secondary accents — for variety & highlights */
+  --green: #34d9b3;
+  --pink: #f472b6;
+  --yellow: #fbbf24;
+
+  --mono: 'Fira Code', monospace;
+  --sans: 'Inter', system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  text-align: left;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+h1, h2, h3, h4 {
+  color: var(--text-h);
+  font-family: var(--sans);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
