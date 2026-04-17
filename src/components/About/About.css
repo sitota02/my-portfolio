@@ -140,6 +140,8 @@
   margin-bottom: 5px;
   letter-spacing: 0.3px;
 }
+
+.edu-note {
   font-size: 13px;
   color: var(--text);
   line-height: 1.6;
